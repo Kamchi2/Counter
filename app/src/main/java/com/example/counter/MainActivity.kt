@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), CounterView {
     private fun initClicker() {
         with(binding) {
             incrementBtn.setOnClickListener {
-                presenter.increment(this@MainActivity)
+                presenter.increment(applicationContext)
                 if(presenter.model.getCount() == 15) {
                     counterTv.setTextColor(Color.GREEN)
                 }

@@ -16,7 +16,7 @@ class ModelCounter {
 
     fun reward(context: Context) {
         if(count==10) {
-            Toast.makeText(context, "Поздравляю", Toast.LENGTH_LONG)
+            Toast.makeText(context, "Поздравляю", Toast.LENGTH_LONG).show()
         }
         else if(count==15) {
 
